@@ -1,6 +1,6 @@
-# Descaracterização — UAI.py
+# Descaracterização
 
-Repositório com a documentação técnica do processo de **descaracterização** de TV Boxes apreendidas, convertidas em **Centrais de Tratamento de Dados (CTD)** de baixo custo no âmbito do projeto **UAI.py**, desenvolvido em parceria com a Receita Federal do Brasil através do programa **Além do Horizonte**.
+Repositório com a documentação técnica do processo de **descaracterização** de TV Boxes apreendidas, convertidas em **Centrais de Tratamento de Dados (CTD)** de baixo custo, desenvolvido em parceria com a Receita Federal do Brasil através do programa **Além do Horizonte**.
 
 ## Contexto
 
@@ -8,7 +8,7 @@ O avanço tecnológico impulsiona um ciclo contínuo de consumo e descarte de di
 
 Nesse cenário, a Receita Federal do Brasil anualmente apreende e descarta milhares de dispositivos TV Box, equipamentos originalmente destinados ao acesso não autorizado a conteúdo de mídia. Apenas entre 2019 e 2020, mais de 97 mil unidades foram destruídas, gerando custos operacionais, desperdício de materiais e componentes eletrônicos valiosos, além de contribuir para a poluição ambiental.
 
-O projeto **UAI.py** surge como uma ponte entre esses dois problemas. A iniciativa propõe uma solução sustentável que transforma esse passivo em um ativo tecnológico: a reutilização das TV Boxes apreendidas, descaracterizando-as e convertendo-as em CTDs de baixo custo. A CTD resultante é uma plataforma agnóstica, projetada para atuar como um *gateway* local que coleta, processa e envia dados de sensores para um *back-end* robusto na nuvem, fomentando a economia circular e a inovação social.
+Esta iniciativa surge como uma ponte entre esses dois problemas. Propõe uma solução sustentável que transforma esse passivo em um ativo tecnológico: a reutilização das TV Boxes apreendidas, descaracterizando-as e convertendo-as em CTDs de baixo custo. A CTD resultante é uma plataforma agnóstica, projetada para atuar como um *gateway* local que coleta, processa e envia dados de sensores para um *back-end* robusto na nuvem, fomentando a economia circular e a inovação social.
 
 Dado o potencial de impacto ambiental, é importante tornar essa solução acessível à população, divulgando-a e democratizando seu uso, com o fito de possibilitar que mais projetos sejam incorporados e impulsionados pela facilidade de envio de dados à nuvem. A apresentação da solução em eventos de divulgação científica e tecnológica também contribui para despertar o interesse de estudantes e jovens pesquisadores, incentivando a criatividade, a inovação e o desenvolvimento de novas propostas capazes de enfrentar problemas reais por meio da tecnologia.
 
@@ -34,14 +34,14 @@ A descaracterização é um requisito obrigatório da Receita Federal e o coraç
 
 ## Guias por modelo de placa
 
-Cada arquivo abaixo documenta o procedimento completo de descaracterização para um modelo específico de TV Box — etapas no **Windows** (preparação do SD, flash da imagem, edição de boot) e na **UAI.py** (primeira inicialização, configuração e cópia para a eMMC).
+Cada arquivo abaixo documenta o procedimento completo de descaracterização para um modelo específico de TV Box — etapas no **Windows** (preparação do SD, flash da imagem, edição de boot) e na **CTD** (primeira inicialização, configuração e cópia para a eMMC).
 
 | Modelo | Documento | SoC / referência |
 |--------|-----------|------------------|
 | **TX6-p** | [TX6-p.md](./TX6-p.md) | Allwinner H6 (Tanix TX6) — Armbian 20.05.3, kernel 5.7.0 |
 | **TX9** | [TX9-p.md](./TX9-p.md) | Amlogic S905W (Tanix TX3 Mini) — [ophub/amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian), kernel 5.9.0 |
 
-> Os nomes **TX6-p** e **TX9** identificam as variantes de placa validadas no projeto UAI.py após testes de estresse; os guias reproduzem o fluxo operacional usado na conversão de cada unidade em CTD.
+> Os nomes **TX6-p** e **TX9** identificam as variantes de placa validadas após testes de estresse; os guias reproduzem o fluxo operacional usado na conversão de cada unidade em CTD.
 
 ## Estrutura do repositório
 

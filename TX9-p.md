@@ -117,9 +117,9 @@ Installing Armbian on Amlogic S905w Android TV Box (Tanix TX3 Mini)
 
 ---
 
-- **Passos na UAI.py**
+- **Passos na CTD**
     - **Considerações:**
-        - Conecte o SD card no leitor da Uai.py;
+        - Conecte o SD card no leitor da CTD;
             
             <aside>
             💻 Utilize um cartão SD a parte pois, ao realizar essa etapa de colocar a TVBox para “*dar boot”* por um cartão, ela cria uma pasta “LOST.DIR” no cartão, corrompendo-o e impedindo o mesmo de inicializar o Linux normalmente. 
@@ -134,7 +134,7 @@ Installing Armbian on Amlogic S905w Android TV Box (Tanix TX3 Mini)
             
         - Conecte um cabo de rede;
         - Conecte um teclado e mouse;
-        - Conecte o Uai.py á alimentação de energia;
+        - Conecte a CTD à alimentação de energia;
     - **Passos de execução**
         1. **Inicialização**
             - Inicialize a TVBOX normalmente → O android nativo será executado;
@@ -163,7 +163,7 @@ Installing Armbian on Amlogic S905w Android TV Box (Tanix TX3 Mini)
                 
         4. **Linux inicializado**
             1. Acesse o Synaptic Package Manager; 
-            2. Copie o SO para a memória interna da UAI.py:
+            2. Copie o SO para a memória interna da CTD:
                 - Abra o terminal;
                 - Digite os comandos a seguir:
                     
@@ -179,7 +179,7 @@ Installing Armbian on Amlogic S905w Android TV Box (Tanix TX3 Mini)
                     	## Ao final da operação deve retornar uma mensagem "*Complete copy to eMMC*"
                     ```
                     
-                - Desligue a UAI.py e retire o cartão SD;
+                - Desligue a CTD e retire o cartão SD;
 - **Opcional**
     - Instalação do GCompris - Software educacional:
         - Abra o terminal;

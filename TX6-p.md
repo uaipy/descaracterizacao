@@ -113,12 +113,12 @@
 
 ---
 
-- **EXECUÇÃO NA UAI.py**
+- **EXECUÇÃO NA CTD**
     - **Considerações:**
-        - Conecte o SD card no leitor da Uai.py;
+        - Conecte o SD card no leitor da CTD;
         - Conecte um cabo de rede;
         - Conecte um teclado e mouse;
-        - Conecte o Uai.py á alimentação de energia;
+        - Conecte a CTD à alimentação de energia;
     - **Passos de execução**
         1. **Inicialização**
             1. Entre no root, quando solicitado:
@@ -179,6 +179,6 @@
                 **Imagem 01.:** Arquivo *install-aw.sh* editado
                 
             3. Feche o terminal; 
-            4. Desligue o UAI.py; 
+            4. Desligue a CTD; 
             5. Retire o cartão SD; 
             6. Religue o aparelho e ele irá iniciar o Linux;
