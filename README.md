@@ -1,14 +1,14 @@
 # Descaracterização
 
-Repositório com a documentação técnica do processo de **descaracterização** de TV Boxes apreendidas, convertidas em **Centrais de Tratamento de Dados (CTD)** de baixo custo, desenvolvido em parceria com a Receita Federal do Brasil através do programa **Além do Horizonte**.
+Repositório com a documentação técnica do processo de **descaracterização** de TV Boxes, convertidas em **Centrais de Tratamento de Dados (CTD)** de baixo custo.
 
 ## Contexto
 
 O avanço tecnológico impulsiona um ciclo contínuo de consumo e descarte de dispositivos eletrônicos, gerando um volume crescente de lixo eletrônico (*e-waste*), um dos desafios ambientais mais significativos da atualidade. Paralelamente, a expansão de soluções de Internet das Coisas (IoT) em setores como a agricultura e a indústria é frequentemente limitada pelo alto custo do hardware especializado.
 
-Nesse cenário, a Receita Federal do Brasil anualmente apreende e descarta milhares de dispositivos TV Box, equipamentos originalmente destinados ao acesso não autorizado a conteúdo de mídia. Apenas entre 2019 e 2020, mais de 97 mil unidades foram destruídas, gerando custos operacionais, desperdício de materiais e componentes eletrônicos valiosos, além de contribuir para a poluição ambiental.
+Nesse cenário, milhares de dispositivos TV Box são descartados anualmente, muitos deles equipamentos originalmente destinados ao acesso não autorizado a conteúdo de mídia. Apenas entre 2019 e 2020, mais de 97 mil unidades foram destruídas, gerando custos operacionais, desperdício de materiais e componentes eletrônicos valiosos, além de contribuir para a poluição ambiental.
 
-Esta iniciativa surge como uma ponte entre esses dois problemas. Propõe uma solução sustentável que transforma esse passivo em um ativo tecnológico: a reutilização das TV Boxes apreendidas, descaracterizando-as e convertendo-as em CTDs de baixo custo. A CTD resultante é uma plataforma agnóstica, projetada para atuar como um *gateway* local que coleta, processa e envia dados de sensores para um *back-end* robusto na nuvem, fomentando a economia circular e a inovação social.
+Esta iniciativa surge como uma ponte entre esses dois problemas. Propõe uma solução sustentável que transforma esse passivo em um ativo tecnológico: a reutilização de TV Boxes, descaracterizando-as e convertendo-as em CTDs de baixo custo. A CTD resultante é uma plataforma agnóstica, projetada para atuar como um *gateway* local que coleta, processa e envia dados de sensores para um *back-end* robusto na nuvem, fomentando a economia circular e a inovação social.
 
 Dado o potencial de impacto ambiental, é importante tornar essa solução acessível à população, divulgando-a e democratizando seu uso, com o fito de possibilitar que mais projetos sejam incorporados e impulsionados pela facilidade de envio de dados à nuvem. A apresentação da solução em eventos de divulgação científica e tecnológica também contribui para despertar o interesse de estudantes e jovens pesquisadores, incentivando a criatividade, a inovação e o desenvolvimento de novas propostas capazes de enfrentar problemas reais por meio da tecnologia.
 
@@ -18,13 +18,13 @@ O processo de conversão de uma TV Box em uma CTD funcional envolve uma seleçã
 
 ### Seleção e análise do hardware
 
-A diversidade de modelos de TV Box disponibilizados pela Receita Federal exigiu uma análise técnica. Foram realizados testes de estresse computacional para avaliar a estabilidade do processador, o gerenciamento de memória e a performance de rede sob carga. Os testes incluíram a execução de *benchmarks* sintéticos para CPU e memória, monitoramento da temperatura do System-on-a-Chip (SoC) durante longos períodos de operação e testes de *throughput* de rede.
+A diversidade de modelos de TV Box analisados exigiu uma análise técnica. Foram realizados testes de estresse computacional para avaliar a estabilidade do processador, o gerenciamento de memória e a performance de rede sob carga. Os testes incluíram a execução de *benchmarks* sintéticos para CPU e memória, monitoramento da temperatura do System-on-a-Chip (SoC) durante longos períodos de operação e testes de *throughput* de rede.
 
 Os modelos **TX6-p** e **TX9** foram selecionados por apresentarem o melhor equilíbrio entre capacidade computacional e eficiência energética. Ambos são equipados com o SoC **Amlogic S905W**, um processador Quad-core ARM Cortex-A53 e 2 GB de memória RAM. Essas especificações, embora modestas para computação de desktop, são mais do que adequadas para atuar como um orquestrador local de dados, capaz de gerenciar múltiplas conexões de sensores e manter a comunicação com a nuvem.
 
 ### O processo de descaracterização
 
-A descaracterização é um requisito obrigatório da Receita Federal e o coração técnico do projeto. Seu objetivo é garantir a remoção permanente do software de pirataria, adaptando o dispositivo para um novo propósito. O processo é dividido em etapas fundamentais:
+A descaracterização é o coração técnico do processo. Seu objetivo é garantir a remoção permanente do software de pirataria, adaptando o dispositivo para um novo propósito. O processo é dividido em etapas fundamentais:
 
 1. **Substituição do Android nativo** — A distribuição [Armbian](https://www.armbian.com/) (baseada em Debian Linux) foi escolhida por seu baixo uso de hardware, estabilidade e suporte da comunidade para a arquitetura ARM, incluindo SoCs Amlogic e Allwinner. Foram selecionadas imagens com kernels customizados (**5.7.0** para o TX6-p e **5.9.0** para o TX9), com drivers para Ethernet, USB e demais periféricos essenciais.
 
